@@ -82,7 +82,6 @@ public:
 			locker.unlock();
 		}
 
-		//如果工作线程原来的而参清空工作线程原来的回调函数的参数
 		if(task_queue[queue_rear].arg != NULL){
 			//delete task_queue[queue_rear].arg;
 			free(task_queue[queue_rear].arg);
