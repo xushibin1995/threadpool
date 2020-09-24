@@ -24,22 +24,22 @@
 
 # 测试
 
-![](C:\Users\许先生\Desktop\miniWebServer\threadpool\picture\Snipaste_2020-09-24_23-03-29.png)
+![](.\picture\Snipaste_2020-09-24_23-03-29.png)
 
 测试程序中设置线程池最小线程数3， 最大线程数100， 任务队列大小10
 
 向线程池中添加500个任务，得到测试结果：
 
-![](C:\Users\许先生\Desktop\miniWebServer\threadpool\picture\Snipaste_2020-09-24_23-08-24.png)
+![](.\picture\Snipaste_2020-09-24_23-08-24.png)
 
-![](C:\Users\许先生\Desktop\miniWebServer\threadpool\picture\Snipaste_2020-09-24_23-09-04.png)
+![](.\picture\Snipaste_2020-09-24_23-09-04.png)
 
-![](C:\Users\许先生\Desktop\miniWebServer\threadpool\picture\Snipaste_2020-09-24_23-09-20.png)
+![](.\picture\Snipaste_2020-09-24_23-09-20.png)
 
 （太多了，此处省略n张图片。。。。）
 
 最后结果：
 
-![](C:\Users\许先生\Desktop\miniWebServer\threadpool\picture\Snipaste_2020-09-24_23-10-43.png)
+![](.\picture\Snipaste_2020-09-24_23-10-43.png)
 
 可以看到在最后大量空闲线程退出，最后只剩下 140500795127552，140500954588928，140501197977344三个线程还存活着，符合最初线程池最小线程数3的设定。
