@@ -184,7 +184,7 @@ public:
 					//检查threads线程名单，名单上有空位或者有死者，那么就把新的线程id放在那个位置上
 					if(threads[i] == 0 || is_thread_alive(threads[i]) ){ 
 						pthread_create(&threads[i], NULL, worker, this);
-						add;
+						add++;
 						live_thr_num++;   //live_thr_num变量只有管理者线程会做写操作，不会出现竞态条件，所以不用加锁						
 					}
 				}
